@@ -1,161 +1,69 @@
+<?php require_once __DIR__ . "/Estructure/Header.php"; ?>
+<?php require_once __DIR__ . "/Estructure/NavBar.php"; ?>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<title>ASOPATICAS</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="container my-5">
+    <div class="card shadow-sm redondear">
+        <div class="card-body p-4 p-md-5">
 
-    <link rel="icon" href="files/img/logo_asopaticas.png">
+            <div class="row align-items-center g-4 justify-content-center">
 
-    <link rel="stylesheet" href="files/css/bootstrap.min.css">
-    <link rel="stylesheet" href="files/css/templatemo.css">
-    <link rel="stylesheet" href="files/css/custom.css">
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3a5bbe002b.js" crossorigin="anonymous"></script>
+                <!-- Imagen (opcional, puedes quitarla si no quieres) -->
+                <div class="col-12 col-lg-5 text-center">
+                    <img class="img_inicio" src="files/img/logoo.png" alt="Recuperar contraseña">
+                </div>
 
-</head>
+                <!-- Formulario -->
+                <div class="col-12 col-lg-5">
 
+                    <h2 class="fw-bold text-center mb-4">Recuperar Contraseña</h2>
 
-<body>
+                    <form method="POST" action="" id="emailForm">
 
-  <!-- Header -->
-  <nav class="navbar navbar-expand-lg navbar-light shadow">
-    <div class="container d-flex justify-content-between align-items-center">
+                        <!-- Grupo: Email -->
+                        <div class="formulario__grupo">
+                            <label for="email" class="formulario__label">
+                                Ingresa tu correo electrónico
+                            </label>
 
-    <!-- logo asopetssoft-->
-    <a href="index.php" class="navbar-brand text-success logo  align-self-center">
-    <img id="logo_asopaticas" class="img" src="files/img/logo_asopaticas.png" alt="logo asopaticas">
-    </a>
+                            <div class="formulario__grupo-input">
+                                <input
+                                    type="email"
+                                    class="formulario__input"
+                                    name="email"
+                                    id="email"
+                                    placeholder="correo@ejemplo.com"
+                                    minlength="8"
+                                    maxlength="60"
+                                    required>
+                            </div>
 
+                            <p class="formulario__input-error">
+                                Ingresa un correo válido.
+                            </p>
+                        </div>
 
-    <!-- close logo asopetssoft-->
-        
+                        <!-- Botón -->
+                        <div class="formulario__grupo formulario__grupo-btn-enviar pt-3">
+                            <button type="submit" class="btn btn-success w-100 redondear2 fw-bold py-2">
+                                Buscar cuenta
+                            </button>
+                        </div>
 
-        <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "> </span>
-        </button>
+                        <!-- Volver al login -->
+                        <div class="pt-4">
+                            <a href="iniciar_sesion.php" class="btn btn-outline-secondary w-100 redondear2 fw-bold py-2 text-decoration-none">
+                                Volver al inicio de sesión
+                            </a>
+                        </div>
 
-    
-              <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-            <div class="flex-fill text-center"> 
-                <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="adoptar__apadrinar.php">Adoptar - Apadrinar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.php">Nosotros</a>
-                    </li>
-             
-                    <li class="nav-item">
-                        <a class="nav-link" href="noticias.php">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactanos.php">Contactanos</a>
-                    </li>
-                    
+                    </form>
 
-                </ul>
+                </div>
+
             </div>
 
-              <div id="centrar_r">
-
-<div class="align-items-center">
-<a class="btn ov-btn-grow-box1 text-muted" href="iniciar_sesion.php">Ingresar</a>  
-</div>
-  
-<div>
-<a class="btn ov-btn-grow-box2 text-white" href="registrar_usuario.php">Registrarse</a>  
-</div>
-
-          
-            <!--aca agregar cositaas-->
-
-        
-            </div>
-            
-            
         </div>
     </div>
-</nav>
-<!-- Close <header></header>-->
-
-
-
-<h2 style="padding-top: 45px; text-align: center; " class="py-5"><b>Recuperar Contraseña</b></h2>
-
-
-
-    
-
-	<main style="
-	
-	border:5px solid #ada5a5;
- 	border-radius: 25px;
-	max-width: 500px;
-	width: 90%;
-	margin: auto;
-  
-
-	padding: 40px;
-	
-	">
-
-
-
-	<form method="POST" action="" class="" id="emailForm">
-
-
-
-
-<!-- Grupo: usuario -->
-<div class="formulario__grupo" id="">
-	<label for="emails" class="formulario__label text-center">Ingresa tu correo electrónico para buscar tu cuenta</label>
-    <p class="text-center" ></p>
-
-	<div class="formulario__grupo-input" >
-
-		<input type="email" class="formulario__input" name="email" id="email" placeholder="correo electrónico" minlength="8" maxlength="60" required>
-    
-	</div>
-	
 </div>
 
-<div class="formulario__grupo formulario__grupo-btn-enviar py-3">
-    <button type="submit" class="btn btn-success my-2 my-sm-0"  >Buscar</button>
-    
-</div>
-	</form>
-
-</main>
-
-
-
-
-
-<!-- inicio de pie de pagina -->
-
-    <img id="pie" src="files/img/pie.png" alt="imagen de pie de pagina">     
-
-<div class="container-fluid py-2 px-sm-3 px-md-3" style="background: #112;">
-<p class="mb-2 text-center" id="pie_text">@Copyright Todos los derechos reservados | <a href="asopetssoft.php" class="text-decoration-none text-white">ASOPETSSOFT</a> 2023</p>
-</div>
-
-<!-- fin de pie de pagina -->
-
-    <!-- Start Script -->
-    
-    <script src="files/js/jquery-1.11.0.min.js"></script>
-    <script src="files/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="files/js/bootstrap.bundle.min.js"></script>
-    <script src="files/js/templatemo.js"></script>
-    <script src="files/js/custom.js"></script>
-    <script src="files/js/recuperar_clave.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- End Script -->
-</body>
-</html>
+<?php require_once __DIR__ . "/Estructure/Footer.php"; ?>

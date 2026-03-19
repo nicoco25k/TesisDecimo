@@ -1,72 +1,51 @@
 <?php
 include_once("bd/Conexion.php");
 
+$correo = strtolower($_POST['email']);
 
-$correo = $_POST['email'];
-$correo = strtolower($correo);
+// Consulta segura
+$sql = "SELECT id_usuarios, correo_usuario 
+        FROM tabla_usuarios 
+        WHERE correo_usuario = :correo";
 
-// Consulta SQL para buscar el correo electrónico en la tabla de usuarios
-$sql = "SELECT id_usuarios, correo_usuario FROM tabla_usuarios WHERE correo_usuario = '$correo'";
+$stmt = $dbh->prepare($sql);
+$stmt->bindParam(':correo', $correo);
+$stmt->execute();
 
-$encontrado = false;
+$usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
-foreach ($dbh->query($sql) as $row) {
-    $correo_c = $row['correo_usuario'];
+if ($usuario) {
 
-    if ($correo_c == $correo) {
-        $idUsuario = $row['id_usuarios'];
-        $codigoSeguridad = sprintf("%06d", mt_rand(0, 999999));
-        $destinatario = $correo_c;
-        $asunto = 'Has solicitado un código de seguridad para recuperar tu contraseña';
-        $cuerpo = 'Has solicitado restablecer tu contraseña, tu código de seguridad es: ' . $codigoSeguridad;
-        $headers = 'From: asopaticas@asopaticas.com' . "\r\n" .
-        'Reply-To: asopaticas@asopaticas.com' . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
+    $idUsuario = $usuario['id_usuarios'];
 
+    // Generar código
+    $codigoSeguridad = sprintf("%06d", mt_rand(0, 999999));
 
-        if (mail($destinatario, $asunto, $cuerpo, $headers)) {
-           
-            $sql = "
-            INSERT INTO `tabla_recuperar_clave`(`id_recuperar_clave`, `id_usuarios`, `codigo`, `id_estado_codigo`, `fecha_enviado`) 
-            VALUES (NULL,'$idUsuario','$codigoSeguridad','1',CONVERT_TZ(NOW(), '+00:00', '-05:00'));
-    ";
-    
-    
-    
-    if (!$dbh->query($sql)) {
-        echo "0923";
+    $destinatario = $correo;
+    $asunto = 'Código de recuperación';
+    $cuerpo = 'Tu código de seguridad es: ' . $codigoSeguridad;
+    $headers = 'From: asopaticas@asopaticas.com';
+
+    if (true) {
+
+        $sqlInsert = "
+            INSERT INTO tabla_recuperar_clave 
+            (id_usuarios, codigo, id_estado_codigo, fecha_enviado)
+            VALUES (:idUsuario, :codigo, 1, NOW())
+        ";
+
+        $stmtInsert = $dbh->prepare($sqlInsert);
+        $stmtInsert->bindParam(':idUsuario', $idUsuario);
+        $stmtInsert->bindParam(':codigo', $codigoSeguridad);
+
+        if ($stmtInsert->execute()) {
+            echo "2309"; // éxito
+        } else {
+            echo "0923"; // error BD
+        }
+    } else {
+        echo "51"; // error al enviar correo
     }
-    else{
-        echo "2309";
-    }
-    
-    }
-
-
-
-
-       
-
-      
-
-
-
-
-        $encontrado = true;
-        break;
-    }
-
-    else {
-        echo "51";
-    }
-
-
-
-
+} else {
+    echo "0925"; // correo no existe
 }
-
-
-if (!$encontrado) {
-    echo "0925";
-}
-?>

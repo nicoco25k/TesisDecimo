@@ -4,7 +4,7 @@
 
 
 
-$dbserver='mysql:dbname=TesisDecimo;host=127.0.0.1';
+$dbserver='mysql:dbname=tesisdecimo;host=127.0.0.1';
 $user = 'root';
 $password = ''; 
 try

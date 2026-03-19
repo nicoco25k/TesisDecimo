@@ -172,3 +172,4 @@ $pdf->Image('@' . $imageData, $x, $y, $newWidth, $newHeight, '', '', '', false, 
   echo '<p>No se especificó una mascota.</p>';
 }
 ?>
+

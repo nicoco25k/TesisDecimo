@@ -1,243 +1,173 @@
 .bg-rey {
-  background: linear-gradient(to bottom, #1F33BC, #131b53); /* Degradado de azul a rojo de arriba hacia abajo */
-
+  background: linear-gradient(
+    to bottom,
+    #1f33bc,
+    #131b53
+  ); /* Degradado de azul a rojo de arriba hacia abajo */
 }
 
 .bg-pie {
-  background: linear-gradient(to bottom, #111122, #131b53); /* Degradado de azul a rojo de arriba hacia abajo */
-
+  background: linear-gradient(
+    to bottom,
+    #111122,
+    #131b53
+  ); /* Degradado de azul a rojo de arriba hacia abajo */
 }
-
 
 .bg-pie1 {
-  background: linear-gradient(to bottom, #131b53, #111122); /* Degradado de azul a rojo de arriba hacia abajo */
-
+  background: linear-gradient(
+    to bottom,
+    #131b53,
+    #111122
+  ); /* Degradado de azul a rojo de arriba hacia abajo */
 }
-
 
 .card25 {
-  background: linear-gradient(to bottom, #131b53, #111122); /* Degradado de azul a rojo de arriba hacia abajo */
-
+  background: linear-gradient(
+    to bottom,
+    #131b53,
+    #111122
+  ); /* Degradado de azul a rojo de arriba hacia abajo */
 }
 
-  
 .colorx {
-  background-color: #434552 ;
+  background-color: #434552;
   /*2d378b = color del borde del logo*/
 }
 
+.bg-rey1 {
+  background-color: #4f5cac !important;
+  border-radius: 20px;
+  padding: 30px;
 
-  .bg-rey1 {
-    background-color: #4f5cac !important;
-    border-radius: 20px;
-    padding: 30px;
-    
-    
-    /*2d378b = color del borde del logo*/
-  } 
-
-
-  .bg-rey2 {
-    background-color: #4f5cac !important;
-    border-radius: 30px;
-    
-    padding: 18px;
-    margin-top: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
-    
-    
-    /*2d378b = color del borde del logo*/
-  } 
-
-    .bg-rey3 {
-    background-color: #4f5cac !important;
-    border-radius: 30px;
-    
-    padding: 18px;
-    margin-top: 30px;
-    
-    
-    /*2d378b = color del borde del logo*/
-  } 
-  
-
-
-
-
-
-
-
-  .mensaje{
-
-width: 100%;
-
-
-  }
-
-
-  .radio{
-
-    border-radius: 5%;
-  }
-
-#redes_sociales{
-
-
-margin: 20px;
-width: 60%;
-height: 80px;
-
+  /*2d378b = color del borde del logo*/
 }
 
+.bg-rey2 {
+  background-color: #4f5cac !important;
+  border-radius: 30px;
 
+  padding: 18px;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
 
-
-
-
-.pr-2{
-padding-right: 10px;
-
+  /*2d378b = color del borde del logo*/
 }
 
-.pr-3{
+.bg-rey3 {
+  background-color: #4f5cac !important;
+  border-radius: 30px;
+
+  padding: 18px;
+  margin-top: 30px;
+
+  /*2d378b = color del borde del logo*/
+}
+
+.mensaje {
+  width: 100%;
+}
+
+.radio {
+  border-radius: 5%;
+}
+
+#redes_sociales {
+  margin: 20px;
+  width: 60%;
+  height: 80px;
+}
+
+.pr-2 {
+  padding-right: 10px;
+}
+
+.pr-3 {
   padding-right: 14px;
-  
-  }
-  .redondear{
+}
+.redondear {
+  border-radius: 20px;
+}
 
-    border-radius: 20px;
-  }
+.redondear2 {
+  border-radius: 50px;
+}
 
-  #img_animal{
+#img_animal {
+  width: auto;
+  height: 350px;
 
+  border-radius: 0px;
+}
 
-    width: auto;
-    height: 350px;
-
-    border-radius: 0px;
-
-
-  }
-
-
- 
-
-  .img_noticias{
-
-
-    
-    width: 100%;
-    height: 700px;
-
-
-
-  }
-
-
-
+.img_noticias {
+  width: 100%;
+  height: 700px;
+}
 
 #logo_asopaticas {
-
   width: 160px;
   height: 135px;
-  
-    }
+}
 
+#logo_asopaticas_admin {
+  width: 100px;
+  height: 90px;
+}
 
-    #logo_asopaticas_admin {
+#logo_asopetssoft_admin {
+  width: 90px;
+  height: 90px;
+}
 
-      width: 100px;
-      height: 90px;
-      
-        }
+#logo_asopetssoft_admin_x {
+  width: 32px;
+  height: 32px;
+}
 
-    #logo_asopetssoft_admin{
-      width: 90px;
-      height: 90px;
+#logo_asopetssoft_admin_blanco {
+  display: block;
+  margin: auto;
+  height: 75%;
+  width: 25%;
+}
 
-    }
+#logito {
+  width: 300px;
+  height: 300px;
+}
 
-    #logo_asopetssoft_admin_x{
-
-      
-      width: 32px;
-      height: 32px;
-
-    }
-
-    #logo_asopetssoft_admin_blanco{
-
-      display:block;
-      margin:auto;
-      height: 75%;
-      width: 25%;
-
-    }
-
-
-
-    #logito {
-
-      width: 300px;
-      height: 300px;
-    
-      }
-
-
-
-#logo_central_nosotros{
-
-  display:block;
-  margin:auto;
+#logo_central_nosotros {
+  display: block;
+  margin: auto;
   width: auto;
   height: 375px;
-
-
-
 }
 
-
-.mapa{
-
-text-align: center;
-
-
-
+.mapa {
+  text-align: center;
 }
 
+#logo_asopetssoft {
+  width: 175px;
+  height: 175px;
+}
 
-
-      #logo_asopetssoft
-      
-      {
-
-
-        width: 175px;
-        height: 175px;
-      }
-
-.slider1{
-  display:block;
-  margin:auto;
+.slider1 {
+  display: block;
+  margin: auto;
   width: auto;
   height: 235px;
-
 }
 
-.slider2{
-  display:block;
-  margin:auto;
+.slider2 {
+  display: block;
+  margin: auto;
   width: auto;
   height: 235px;
   border-radius: 50%;
-
 }
-
-
-
-
-
 
 .content-text {
   padding: 20px; /* Agrega un espacio interno alrededor del contenido */
@@ -266,119 +196,92 @@ text-align: center;
     margin-bottom: 10px; /* Margen inferior para separar los títulos del texto */
   }
   .content-text p {
-  font-size: 1rem; /* Tamaño de fuente para los párrafos */
+    font-size: 1rem; /* Tamaño de fuente para los párrafos */
 
-  margin-bottom: 10px; /* Margen inferior para separar los párrafos */
+    margin-bottom: 10px; /* Margen inferior para separar los párrafos */
+  }
+
+  .slider_inicio {
+    height: 650px;
+  }
 }
 
-
-.slider_inicio{
-
-height: 650px;
-
+.slider_inicio {
+  background: linear-gradient(
+    to bottom,
+    #131b53,
+    #111122
+  ); /* Degradado de azul a rojo de arriba hacia abajo */
 }
 
-}
-
-
-.slider_inicio{
-  background: linear-gradient(to bottom, #131b53, #111122); /* Degradado de azul a rojo de arriba hacia abajo */
-
-}
-
-#slider_nosotros_container{
-
-
+#slider_nosotros_container {
   background-color: lightgray !important;
- 
- 
 }
 
-
-#slider_nosotros{
-
-  display:block;
-  margin:auto;
+#slider_nosotros {
+  display: block;
+  margin: auto;
   margin-top: 4%;
   width: 600px;
   height: 350px;
- border-radius: 40px;
-
-
+  border-radius: 40px;
 }
 
-
-
-#img_mision_vision{
-
+#img_mision_vision {
   display: flex;
-  margin: auto; 
-  width: 50%; 
+  margin: auto;
+  width: 50%;
   height: 350px;
 }
 
-#img_mision_vision1{
-
+#img_mision_vision1 {
   display: flex;
-  margin: auto; 
-  width: 100%; 
+  margin: auto;
+  width: 100%;
   height: 400px;
 }
 
-
-
-.container1{
-background-color: lightgray;
-
+.container1 {
+  background-color: lightgray;
 }
 
-.icon_cuadro_3{
+.icon_cuadro_3 {
   color: #411919;
-padding-top: 40px;
-padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
-#admin_img{
-
-width: 50px;
-height: 50px;
-
+#admin_img {
+  width: 50px;
+  height: 50px;
 }
 
-#pie_text{
-
-color: whitesmoke;
+#pie_text {
+  color: whitesmoke;
 }
 
-#centrar{
-display: flex;
-margin: auto;
-
+#centrar {
+  display: flex;
+  margin: auto;
 }
 
-#centrar_r{
-  
+#centrar_r {
   display: flex;
   justify-content: center;
-  
-  }
+}
 
-
-
-#pie{
-
-  display:block;
-  margin:auto;
+#pie {
+  display: block;
+  margin: auto;
   height: -100px;
   width: 100%;
 }
 
-#meme{
-  display:block;
-  margin:auto;
+#meme {
+  display: block;
+  margin: auto;
   width: 380px;
   height: 330px;
-
 }
 
 .container_1 {
@@ -387,77 +290,65 @@ margin: auto;
 
 @media (min-width: 541px) {
   .container_1 {
- 
     border: 5px solid #ada5a5;
     border-radius: 25px;
   }
 }
 
+/* Estilos para el botón */
+.my-button {
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  color: #000000; /* Color de texto */
+  padding: 0; /* Sin relleno */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Hazlo un bloque en línea */
+  font-size: 15px; /* Tamaño de fuente */
+  margin: 10px; /* Algo de margen */
+  cursor: pointer; /* Cursor tipo puntero al pasar */
+  transition: opacity 0.3s ease; /* Transición de opacidad */
+  position: relative; /* Posicionamiento relativo para el texto */
+  font-weight: bold; /* Hace que el texto sea negrita */
+}
 
-    /* Estilos para el botón */
-    .my-button {
-      background: none; /* Sin fondo */
-      border: none; /* Sin borde */
-      color: #000000; /* Color de texto */
-      padding: 0; /* Sin relleno */
-      text-align: center; /* Centra el texto */
-      text-decoration: none; /* Sin subrayado */
-      display: inline-block; /* Hazlo un bloque en línea */
-      font-size: 15px; /* Tamaño de fuente */
-      margin: 10px; /* Algo de margen */
-      cursor: pointer; /* Cursor tipo puntero al pasar */
-      transition: opacity 0.3s ease; /* Transición de opacidad */
-      position: relative; /* Posicionamiento relativo para el texto */
-      font-weight: bold; /* Hace que el texto sea negrita */
-    }
+.my-button img {
+  width: 120px;
+  height: 65px;
+  display: block;
+}
 
-    .my-button img {
-      width: 120px;
-      height: 65px;
-      display: block;
-    }
+.button-text {
+  position: absolute; /* Posicionamiento absoluto para el texto */
+  top: 52%; /* Alinea el texto verticalmente en el centro */
+  left: 50%; /* Alinea el texto horizontalmente en el centro */
+  transform: translate(-50%, -50%); /* Centra el texto */
+  font-weight: bold; /* Hace que el texto sea negrita */
 
-    .button-text {
-      position: absolute; /* Posicionamiento absoluto para el texto */
-      top: 52%; /* Alinea el texto verticalmente en el centro */
-      left: 50%; /* Alinea el texto horizontalmente en el centro */
-      transform: translate(-50%, -50%); /* Centra el texto */
-      font-weight: bold; /* Hace que el texto sea negrita */
-       
-      text-decoration: none; /* Elimina cualquier decoración de texto */
-      color: #000000;
-    }
+  text-decoration: none; /* Elimina cualquier decoración de texto */
+  color: #000000;
+}
 
-    .my-button:hover {
-      opacity: 0.8; /* Cambia la opacidad al pasar el ratón */
-    }
+.my-button:hover {
+  opacity: 0.8; /* Cambia la opacidad al pasar el ratón */
+}
 
+.nuestra-historia {
+  padding: 50px 0; /* Agrega espacio alrededor del contenido */
+  background-color: #f8f9fa; /* Color de fondo */
+}
 
- 
+.nuestra-historia h2 {
+  font-size: 2.5rem; /* Tamaño de fuente para el título */
+  text-align: center; /* Alineación del texto al centro */
+  margin-bottom: 30px; /* Margen inferior */
+}
 
-    .nuestra-historia {
-      padding: 50px 0; /* Agrega espacio alrededor del contenido */
-      background-color: #f8f9fa; /* Color de fondo */
-  }
-  
-  .nuestra-historia h2 {
-      font-size: 2.5rem; /* Tamaño de fuente para el título */
-      text-align: center; /* Alineación del texto al centro */
-      margin-bottom: 30px; /* Margen inferior */
-  }
-  
-  .nuestra-historia p {
-      font-size: 1.2rem; /* Tamaño de fuente para el texto */
-      line-height: 1.6; /* Altura de línea */
-      margin-bottom: 20px; /* Margen inferior */
-  }
-
-
-
-
-
-  
-
+.nuestra-historia p {
+  font-size: 1.2rem; /* Tamaño de fuente para el texto */
+  line-height: 1.6; /* Altura de línea */
+  margin-bottom: 20px; /* Margen inferior */
+}
 
 /* Estilo para el contenedor de imágenes */
 .image-container {
@@ -498,61 +389,56 @@ margin: auto;
 /* Estilo para centrar las imágenes horizontalmente en PC */
 @media (min-width: 768px) {
   .row {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
   .col-sm-4 {
-      flex: 0 0 auto;
+    flex: 0 0 auto;
   }
 }
 
+/* Estilos personalizados para el modal */
+.modal-content {
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
 
+.modal-header {
+  border-bottom: none; /* Sin borde inferior en el encabezado */
+  background-color: #f8f9fa; /* Fondo del encabezado */
+  padding: 20px; /* Espaciado interno */
+}
 
+.modal-title {
+  color: #333; /* Color del texto del título */
+  font-size: 24px; /* Tamaño del texto del título */
+  font-weight: bold; /* Negrita */
+  margin: 0; /* Sin margen */
+}
 
-    /* Estilos personalizados para el modal */
-    .modal-content {
-        border-radius: 20px; /* Bordes redondeados */
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    }
+.modal-body {
+  padding: 20px; /* Espaciado interno */
+}
 
-    .modal-header {
-        border-bottom: none; /* Sin borde inferior en el encabezado */
-        background-color: #f8f9fa; /* Fondo del encabezado */
-        padding: 20px; /* Espaciado interno */
-    }
+.modal-footer {
+  border-top: none; /* Sin borde superior en el pie de página */
+  padding: 20px; /* Espaciado interno */
+  justify-content: center; /* Centrar elementos */
+}
 
-    .modal-title {
-        color: #333; /* Color del texto del título */
-        font-size: 24px; /* Tamaño del texto del título */
-        font-weight: bold; /* Negrita */
-        margin: 0; /* Sin margen */
-    }
+.modal-footer button {
+  background-color: #4caf50; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
 
-    .modal-body {
-        padding: 20px; /* Espaciado interno */
-    }
-
-    .modal-footer {
-        border-top: none; /* Sin borde superior en el pie de página */
-        padding: 20px; /* Espaciado interno */
-        justify-content: center; /* Centrar elementos */
-    }
-
-    .modal-footer button {
-        background-color: #4caf50; /* Color de fondo del botón */
-        color: white; /* Color del texto del botón */
-        border: none; /* Sin borde */
-        padding: 10px 20px; /* Espaciado interno */
-        border-radius: 5px; /* Bordes redondeados */
-        cursor: pointer; /* Cambiar cursor al pasar el ratón */
-        transition: background-color 0.3s; /* Transición suave del color de fondo */
-    }
-
-    .modal-footer button:hover {
-        background-color: #45a049; /* Cambiar color de fondo al pasar el ratón */
-    }
-    
-
+.modal-footer button:hover {
+  background-color: #45a049; /* Cambiar color de fondo al pasar el ratón */
+}
 
 /* Estilos para el widget de UserWay */
 #userway-widget {
@@ -560,7 +446,6 @@ margin: auto;
   bottom: 20px; /* Ajusta la distancia desde la parte inferior */
   right: 20px;
 }
-
 
 .card-container {
   display: flex;
@@ -575,7 +460,9 @@ margin: auto;
   padding: 20px;
   text-align: center;
   width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Transición suave */
 }
 
 .card33:hover {
@@ -583,28 +470,26 @@ margin: auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Añade una sombra más grande al pasar el cursor */
 }
 
+.colorfont1 {
+  background: linear-gradient(
+    to bottom,
 
-.colorfont1{
-
-  background: linear-gradient(to bottom, #8BD7F7, #131B54); /* Degradado de azul a rojo de arriba hacia abajo */
-
+    #131b53,
+    #111122
+  ); /* Degradado de azul a rojo de arriba hacia abajo */
 }
-
-
-
-
-
-
-
 
 /* Estilos generales */
 .contact-container {
-
-  background: linear-gradient(to bottom, #8BD7F7, #131B54); /* Degradado de azul a rojo de arriba hacia abajo */
-max-width: 88%;
-margin: auto;
-padding: 10px;
-margin-bottom: 60px;
+  background: linear-gradient(
+    to bottom,
+    #131b53,
+    #111122
+  ); /* Degradado de azul a rojo de arriba hacia abajo */
+  max-width: 100%;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 60px;
 }
 
 /* Logo */
@@ -629,7 +514,9 @@ margin-bottom: 60px;
   width: 200px; /* Tamaño del logo */
   height: auto;
   margin-bottom: 15px; /* Espaciado entre logo y botones */
-  transition: transform 0.3s ease, filter 0.3s ease; /* Suavidad en el hover */
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease; /* Suavidad en el hover */
 }
 
 .logo-container img:hover {
@@ -641,6 +528,10 @@ margin-bottom: 60px;
   word-wrap: break-word;
   overflow-wrap: break-word; /* Rompe texto largo */
   text-align: justify;
+}
+
+.bg_navbar {
+  background: #ffffff;
 }
 
 /* Responsividad */
@@ -657,7 +548,6 @@ margin-bottom: 60px;
   .text-container1 {
     text-align: center; /* Centra texto en pantallas pequeñas */
     font-size: 0.92rem; /* Reduce aún más el tamaño en pantallas pequeñas */
-
   }
 }
 
@@ -694,7 +584,9 @@ margin-bottom: 60px;
   cursor: pointer;
   width: 100%; /* Hace que todos los botones ocupen el mismo ancho */
   box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Añade una transición suave */
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease; /* Añade una transición suave */
   max-width: 160px;
 }
 
@@ -703,10 +595,8 @@ margin-bottom: 60px;
   transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
 }
 
-
-
 .animal-text {
-  font-family: 'Patrick Hand', cursive; /* Aplica una fuente de estilo animal */
+  font-family: "Patrick Hand", cursive; /* Aplica una fuente de estilo animal */
   font-size: 5vw; /* Tamaño del texto relativo al ancho del viewport */
   color: #4a4a4a; /* Color del texto */
   margin: 0; /* Elimina el margen por defecto */
@@ -726,13 +616,9 @@ margin-bottom: 60px;
   }
 }
 
-
-
-
 .tipoletrade3 {
-
   font-size: 5vw; /* Tamaño del texto relativo al ancho del viewport */
- 
+
   margin: 0; /* Elimina el margen por defecto */
 }
 
@@ -750,27 +636,18 @@ margin-bottom: 60px;
   }
 }
 
-
-
-.fontanimal{
-
-
+.fontanimal {
   color: #fff;
-
 }
-
 
 .fontanimal2 {
   color: #000000;
   font-size: 1.6rem; /* Tamaño de texto predeterminado */
 }
 
-
-.fondoooo{
-
-  background-color: #C3D9EE;
+.fondoooo {
+  background-color: #c3d9ee;
 }
-
 
 /* Para pantallas más pequeñas, como móviles */
 @media (max-width: 600px) {
@@ -779,15 +656,17 @@ margin-bottom: 60px;
   }
 }
 
-.imgdonar{
-
-width: 100%;
-height: 200px;
-border-radius: 5%;
-
+.imgdonar {
+  width: 100%;
+  height: 200px;
+  border-radius: 5%;
 }
 
 .text-success2 {
+  color: #f8f9fa;
+  font-size: 1.1rem !important; /* Ajusta el tamaño del texto por defecto */
+}
+.text-success3 {
   color: #f8f9fa;
   font-size: 1.1rem !important; /* Ajusta el tamaño del texto por defecto */
 }
@@ -800,22 +679,24 @@ border-radius: 5%;
 
 @media (max-width: 380px) {
   .text-success2 {
-    font-size: 0.6rem !important; /* Ajusta el tamaño del texto para pantallas extra pequeñas */
+    font-size: 0.65rem !important; /* Ajusta el tamaño del texto para pantallas extra pequeñas */
+  }
+  .text-success3 {
+    font-size: 0.8rem !important; /* Ajusta el tamaño del texto para pantallas extra pequeñas */
   }
 }
-
-
 
 /* Estilos para el logo */
 #logo_asopaticaspie {
   max-width: 150px; /* Ajusta el tamaño del logo según sea necesario */
-  transition: transform 0.3s ease, filter 0.3s ease; /* Suavidad en el hover */
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease; /* Suavidad en el hover */
 }
 
 #logo_asopaticaspie img:hover {
   transform: scale(1.1); /* Aumenta ligeramente el tamaño */
 }
-
 
 /* Estilos para los íconos de redes sociales */
 .social-icon {
@@ -846,15 +727,11 @@ iframe {
   border: 0; /* Elimina el borde predeterminado si es necesario */
 }
 
-
-
 .wave-separator svg {
   display: block;
   width: 100%;
   height: auto;
 }
-
-
 
 .bg-pie {
   margin-top: -1px; /* Ajusta según sea necesario */
@@ -866,28 +743,20 @@ footer {
   padding: 0;
 }
 
-
 .social-icon {
   display: inline-block; /* Para que el contenedor de la imagen también tenga la animación */
 }
 
 .social-icon img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .social-icon:hover img {
   transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el cursor */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra sutil */
 }
-
-
-
-
-
-
-
-
-
 
 .slide-container {
   max-width: 1120px;
@@ -917,45 +786,41 @@ footer {
   object-fit: cover; /* Ajusta el contenido de la imagen sin deformarla */
   border: none; /* Elimina cualquier borde alrededor de la imagen */
 }
-.swiper-navBtn{
+.swiper-navBtn {
   color: #ffffff;
   transition: color 0.3s ease;
 }
-.swiper-navBtn:hover{
+.swiper-navBtn:hover {
   color: #ffffff;
 }
 .swiper-navBtn::before,
-.swiper-navBtn::after{
+.swiper-navBtn::after {
   font-size: 35px;
 }
-.swiper-button-next{
+.swiper-button-next {
   right: 0;
 }
-.swiper-button-prev{
+.swiper-button-prev {
   left: 0;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: #ffffff;
   opacity: 1;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: #b5b0a4;
 }
 
 @media screen and (max-width: 768px) {
-  .slide-content{
+  .slide-content {
     margin: 0 10px;
     padding-right: 10px;
     padding-left: 10px;
   }
-  .swiper-navBtn{
+  .swiper-navBtn {
     display: none;
   }
 }
-
-
-
-
 
 .container-fluid-2 {
   display: flex;
@@ -963,7 +828,6 @@ footer {
   align-items: center; /* Centra los elementos horizontalmente */
   justify-content: center; /* Centra los elementos verticalmente */
 }
-
 
 .image-section-2 {
   display: flex;
@@ -976,21 +840,39 @@ footer {
 .img-fluid-2 {
   max-width: 100%; /* Asegura que la imagen no exceda el ancho disponible */
   height: 350px; /* Mantiene la relación de aspecto */
-  mask-image: linear-gradient(to bottom, black 30%, transparent 100%); /* Crea el efecto de desvanecimiento en la parte inferior */
-  -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%); /* Compatibilidad con Safari */
+  mask-image: linear-gradient(
+    to bottom,
+    black 30%,
+    transparent 100%
+  ); /* Crea el efecto de desvanecimiento en la parte inferior */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 30%,
+    transparent 100%
+  ); /* Compatibilidad con Safari */
   mask-size: cover; /* Asegura que el degradado cubra toda la imagen */
 }
 
+.img-fluid-3 {
+  max-width: 300px;
+  width: 100%; /* Asegura que la imagen no exceda el ancho disponible */
+  height: auto; /* Mantiene la relación de aspecto */
+  max-height: 300px;
+  filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.25));
+}
+
+.img_inicio {
+  max-width: 380px;
+  width: 100%; /* Asegura que la imagen no exceda el ancho disponible */
+  height: auto; /* Mantiene la relación de aspecto */
+  max-height: 400px;
+  filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.25));
+}
 
 /* Media query para dispositivos más grandes */
 @media (min-width: 768px) {
   .container-fluid-2 {
     flex-direction: row; /* Cambia a fila en dispositivos más grandes */
-  }
-
-  .text-section {
-    flex: 1;
-    text-align: left; /* Alinea el texto a la izquierda */
   }
 
   .image-section-2 {
@@ -1002,12 +884,11 @@ footer {
   display: block;
   width: 100%;
   height: auto;
-  transform: rotateX(180deg); /* Invertir la ola para que se vea en la parte inferior */
+  transform: rotateX(
+    180deg
+  ); /* Invertir la ola para que se vea en la parte inferior */
   margin-top: -1px; /* Ajusta si es necesario para evitar la línea */
 }
-
-
-
 
 /* MASCOTAS CARDS */
 
@@ -1018,38 +899,36 @@ footer {
 
   border: #000000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de tarjeta */
-  transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para hover */
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s; /* Transiciones para hover */
   display: flex; /* Usar flex para la tarjeta */
   flex-direction: column; /* Disposición en columna */
-  background: linear-gradient(to bottom, #476bfb, #131B54); /* Degradado de azul a rojo de arriba hacia abajo */
-
-  
-  
+  background: linear-gradient(
+    to bottom,
+    #064bab,
+    #1b1c1e
+  ); /* Degradado de azul a rojo de arriba hacia abajo */
 }
 
 .custom-card_mascotas:hover {
-
-
   transform: scale(1.05); /* Escalar la tarjeta */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Aumentar sombra en hover */
 }
 
 .custom-img_mascotas {
-  
   width: 100%;
   height: 100%;
   border-radius: 50%; /* Hace la imagen circular */
   object-fit: cover; /* Ajusta la imagen dentro del círculo sin distorsión */
 }
 
-
 .custom-img_mascotas2 {
   width: 100%;
   height: 400px;
-border-radius: 2%;
+  border-radius: 2%;
   object-fit: cover; /* Ajusta la imagen dentro del círculo sin distorsión */
 }
-
 
 .cartitoy {
   display: flex;
@@ -1063,19 +942,14 @@ border-radius: 2%;
   border-radius: 50%; /* Hace el contenedor circular */
 }
 
-
-
-.nosubrayar{
+.nosubrayar {
   text-decoration: none;
-
 }
-
 
 .custom-content_mascotas {
   padding: 1rem; /* Espaciado interno para el contenido */
   flex-grow: 1; /* Permitir que el contenido crezca */
 }
-
 
 .custom-title_mascotas {
   color: #fff;
@@ -1086,7 +960,6 @@ border-radius: 2%;
   margin-bottom: 0; /* Elimina el margen inferior de todos los párrafos con la clase .card-text */
 }
 
-
 /* Ajustes responsivos */
 @media (max-width: 767px) {
   .custom-img_mascotas {
@@ -1095,59 +968,53 @@ border-radius: 2%;
   .custom-card_mascotas {
     margin: 2px auto;
     width: 90%; /* Asegura que la tarjeta ocupe el ancho completo de su contenedor */
-  
   }
 
-.caja_anuncios{
+  .caja_anuncios {
+    display: block;
+    margin: auto;
+  }
 
-  display:block;
-  margin:auto;
-
-
-}
-
-
-.caja_anuncios_peque{
-
-
-  width: 90%; /* Asegura que la tarjeta ocupe el ancho completo de su contenedor */
-  display:block;
-  margin:auto;
-
-}
-
-
-
-
+  .caja_anuncios_peque {
+    /* border-radius: 10px; */
+    width: 90%; /* Asegura que la tarjeta ocupe el ancho completo de su contenedor */
+    display: block;
+    margin: auto;
+  }
 }
 
 @media (min-width: 768px) {
   .custom-img_mascotas {
-
     height: 300px; /* Altura para pantallas medianas y grandes */
   }
- 
 
-  .caja_anuncios_peque{
-
-
+  .caja_anuncios_peque {
     width: 70%; /* Asegura que la tarjeta ocupe el ancho completo de su contenedor */
-    display:block;
-    margin:auto;
-  
+    display: block;
+    margin: auto;
   }
-  
-  
-
 }
 
+.peque {
+  width: 35%; /* Asegura que la tarjeta ocupe el ancho completo de su contenedor */
+  min-width: 280px;
+}
 
+.hazparte {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
 
+  max-width: 100%;
+  width: 390px;
+  height: 310px;
+}
 
 .img_megafono {
   display: block;
   margin: auto;
   margin-top: -30px;
+  margin-left: 52px;
   margin-bottom: 50px;
   width: 80%;
   height: auto;
@@ -1158,25 +1025,48 @@ border-radius: 2%;
   transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
 }
 
+.adopta_cambio {
+  display: block;
+  margin: auto;
+  margin-top: -80px;
+  margin-bottom: 20px;
+  width: 60%;
+  height: auto;
+  transition: transform 0.3s ease; /* Transición suave */
+}
 
+.adopta_cambio:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
 
+@media (max-width: 768px) {
+  .adopta_cambio {
+    width: 100%;
+  }
+  .img_megafono {
+    width: 90%;
+    margin-left: 45px;
+  }
+}
 
 .caja_anuncios_peque {
   cursor: pointer; /* Cambia el cursor al pasar por encima */
-  transition: background-color 0.3s, transform 0.3s; /* Animación suave */
+  border-radius: 30px;
+  transition:
+    background-color 0.3s,
+    transform 0.3s; /* Animación suave */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de tarjeta */
- }
-
-.caja_anuncios_peque:hover {
-
-  transform: scale(1.05); /* Efecto de aumentar ligeramente el tamaño */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de tarjeta */
-  transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para hover */
 }
 
+.caja_anuncios_peque:hover {
+  transform: scale(1.05); /* Efecto de aumentar ligeramente el tamaño */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de tarjeta */
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s; /* Transiciones para hover */
+}
 
-.bold-text
-{
+.bold-text {
   font-weight: bold;
 }
 
@@ -1184,21 +1074,19 @@ border-radius: 2%;
   padding: 10px;
 
   background: none; /* Eliminamos cualquier imagen de fondo previa */
-  background-color: #12194C; /* Color de fondo de respaldo en caso de que el SVG no se cargue */
-  background-image: url("data:image/svg+xml,%3Csvg%20id%3D%22visual%22%20viewBox%3D%220%200%20960%20540%22%20width%3D%22960%22%20height%3D%22540%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20version%3D%221.1%22%3E%3Cpath%20d%3D%22M0%2066L87%2077L175%2077L262%2071L349%2055L436%2066L524%2066L611%2082L698%2060L785%2055L873%2071L960%2082L960%200L873%200L785%200L698%200L611%200L524%200L436%200L349%200L262%200L175%200L87%200L0%200Z%22%20fill%3D%22%23121a4d%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20174L87%20179L175%20174L262%20141L349%20158L436%20147L524%20136L611%20201L698%20174L785%20168L873%20163L960%20190L960%2080L873%2069L785%2053L698%2058L611%2080L524%2064L436%2064L349%2053L262%2069L175%2075L87%2075L0%2064Z%22%20fill%3D%22%23121842%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20347L87%20336L175%20293L262%20320L349%20282L436%20314L524%20341L611%20374L698%20363L785%20347L873%20336L960%20357L960%20188L873%20161L785%20166L698%20172L611%20199L524%20134L436%20145L349%20156L262%20139L175%20172L87%20177L0%20172Z%22%20fill%3D%22%23121637%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20433L87%20390L175%20368L262%20401L349%20347L436%20374L524%20438L611%20444L698%20428L785%20444L873%20401L960%20428L960%20355L873%20334L785%20345L698%20361L611%20372L524%20339L436%20312L349%20280L262%20318L175%20291L87%20334L0%20345Z%22%20fill%3D%22%2312142c%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20541L87%20541L175%20541L262%20541L349%20541L436%20541L524%20541L611%20541L698%20541L785%20541L873%20541L960%20541L960%20426L873%20399L785%20442L698%20426L611%20442L524%20436L436%20372L349%20345L262%20399L175%20366L87%20388L0%20431Z%22%20fill%3D%22%23111122%22%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("../../files/img/haikei.png");
 
   background-size: cover; /* Asegura que el SVG cubra todo el contenedor */
   background-position: center;
   background-repeat: no-repeat;
-  
+
   border-radius: 10px;
   margin: 20px auto;
   max-width: 1300px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Sombra ligera */
-  margin-bottom: 80px;
-  
+  margin-bottom: 40px;
+
   margin-top: 50px;
-  
 }
 
 .container-mascotas h2,
@@ -1206,51 +1094,47 @@ border-radius: 2%;
   color: #333; /* Color de texto */
 }
 
+.img_fondo {
+  background: none; /* Eliminamos cualquier imagen de fondo previa */
+  background-image: url("../../files/img/haikei5.png");
+
+  /* background-color: #f5f5f0; */
+  background-size: cover; /* Asegura que el SVG cubra todo el contenedor */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 768px) {
   .container-mascotas {
-    background-image: url("data:image/svg+xml,%3Csvg%20id%3D%22visual%22%20viewBox%3D%220%200%20450%20900%22%20width%3D%22450%22%20height%3D%22900%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20version%3D%221.1%22%3E%3Cpath%20d%3D%22M0%20109L41%20127L82%20127L123%20118L164%2091L205%20109L245%20109L286%20136L327%20100L368%2091L409%20118L450%20136L450%200L409%200L368%200L327%200L286%200L245%200L205%200L164%200L123%200L82%200L41%200L0%200Z%22%20fill%3D%22%23121a4d%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20289L41%20298L82%20289L123%20235L164%20262L205%20244L245%20226L286%20334L327%20289L368%20280L409%20271L450%20316L450%20134L409%20116L368%2089L327%2098L286%20134L245%20107L205%20107L164%2089L123%20116L82%20125L41%20125L0%20107Z%22%20fill%3D%22%23121842%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20577L41%20559L82%20487L123%20532L164%20469L205%20523L245%20568L286%20622L327%20604L368%20577L409%20559L450%20595L450%20314L409%20269L368%20278L327%20287L286%20332L245%20224L205%20242L164%20260L123%20233L82%20287L41%20296L0%20287Z%22%20fill%3D%22%23121637%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20721L41%20649L82%20613L123%20667L164%20577L205%20622L245%20730L286%20739L327%20712L368%20739L409%20667L450%20712L450%20593L409%20557L368%20575L327%20602L286%20620L245%20566L205%20521L164%20467L123%20530L82%20485L41%20557L0%20575Z%22%20fill%3D%22%2312142c%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20901L41%20901L82%20901L123%20901L164%20901L205%20901L245%20901L286%20901L327%20901L368%20901L409%20901L450%20901L450%20710L409%20665L368%20737L327%20710L286%20737L245%20728L205%20620L164%20575L123%20665L82%20611L41%20647L0%20719Z%22%20fill%3D%22%23111122%22%3E%3C/path%3E%3C/svg%3E");
-
-      padding: 15px;
-      margin: 10px;
-      
+    background-image: url("../../files/img/haikei.png");
+    padding: 15px;
+    margin: 10px;
   }
 }
 
-
-
-.contact{
-
+.contact {
   padding: 10px;
 
   background: none; /* Eliminamos cualquier imagen de fondo previa */
-  background-color: #E5E5E5; /* Color de fondo de respaldo en caso de que el SVG no se cargue */
+  background-color: #e5e5e5; /* Color de fondo de respaldo en caso de que el SVG no se cargue */
 
   border-radius: 10px;
   margin: 20px auto;
   max-width: 1300px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Sombra ligera */
   margin-bottom: 80px;
-  
-  margin-top: 50px;
-  
 
+  margin-top: 50px;
 }
 
-
-
-
-
 .container-contacto {
-
   background: none; /* Eliminamos cualquier imagen de fondo previa */
-  background-color: #12194C; /* Color de fondo de respaldo en caso de que el SVG no se cargue */
+  background-color: #12194c; /* Color de fondo de respaldo en caso de que el SVG no se cargue */
   background-image: url("data:image/svg+xml,%3Csvg%20id%3D%22visual%22%20viewBox%3D%220%200%20960%20540%22%20width%3D%22960%22%20height%3D%22540%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20version%3D%221.1%22%3E%3Cpath%20d%3D%22M0%2066L87%2077L175%2077L262%2071L349%2055L436%2066L524%2066L611%2082L698%2060L785%2055L873%2071L960%2082L960%200L873%200L785%200L698%200L611%200L524%200L436%200L349%200L262%200L175%200L87%200L0%200Z%22%20fill%3D%22%23121a4d%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20174L87%20179L175%20174L262%20141L349%20158L436%20147L524%20136L611%20201L698%20174L785%20168L873%20163L960%20190L960%2080L873%2069L785%2053L698%2058L611%2080L524%2064L436%2064L349%2053L262%2069L175%2075L87%2075L0%2064Z%22%20fill%3D%22%23121842%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20347L87%20336L175%20293L262%20320L349%20282L436%20314L524%20341L611%20374L698%20363L785%20347L873%20336L960%20357L960%20188L873%20161L785%20166L698%20172L611%20199L524%20134L436%20145L349%20156L262%20139L175%20172L87%20177L0%20172Z%22%20fill%3D%22%23121637%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20433L87%20390L175%20368L262%20401L349%20347L436%20374L524%20438L611%20444L698%20428L785%20444L873%20401L960%20428L960%20355L873%20334L785%20345L698%20361L611%20372L524%20339L436%20312L349%20280L262%20318L175%20291L87%20334L0%20345Z%22%20fill%3D%22%2312142c%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20541L87%20541L175%20541L262%20541L349%20541L436%20541L524%20541L611%20541L698%20541L785%20541L873%20541L960%20541L960%20426L873%20399L785%20442L698%20426L611%20442L524%20436L436%20372L349%20345L262%20399L175%20366L87%20388L0%20431Z%22%20fill%3D%22%23111122%22%3E%3C/path%3E%3C/svg%3E");
 
   background-size: cover; /* Asegura que el SVG cubra todo el contenedor */
   background-position: center;
   background-repeat: no-repeat;
-  
-
 }
 
 .container-contacto h2,
@@ -1262,32 +1146,40 @@ border-radius: 2%;
   .container-contacto {
     background-image: url("data:image/svg+xml,%3Csvg%20id%3D%22visual%22%20viewBox%3D%220%200%20450%20900%22%20width%3D%22450%22%20height%3D%22900%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20version%3D%221.1%22%3E%3Cpath%20d%3D%22M0%20109L41%20127L82%20127L123%20118L164%2091L205%20109L245%20109L286%20136L327%20100L368%2091L409%20118L450%20136L450%200L409%200L368%200L327%200L286%200L245%200L205%200L164%200L123%200L82%200L41%200L0%200Z%22%20fill%3D%22%23121a4d%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20289L41%20298L82%20289L123%20235L164%20262L205%20244L245%20226L286%20334L327%20289L368%20280L409%20271L450%20316L450%20134L409%20116L368%2089L327%2098L286%20134L245%20107L205%20107L164%2089L123%20116L82%20125L41%20125L0%20107Z%22%20fill%3D%22%23121842%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20577L41%20559L82%20487L123%20532L164%20469L205%20523L245%20568L286%20622L327%20604L368%20577L409%20559L450%20595L450%20314L409%20269L368%20278L327%20287L286%20332L245%20224L205%20242L164%20260L123%20233L82%20287L41%20296L0%20287Z%22%20fill%3D%22%23121637%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20721L41%20649L82%20613L123%20667L164%20577L205%20622L245%20730L286%20739L327%20712L368%20739L409%20667L450%20712L450%20593L409%20557L368%20575L327%20602L286%20620L245%20566L205%20521L164%20467L123%20530L82%20485L41%20557L0%20575Z%22%20fill%3D%22%2312142c%22%3E%3C/path%3E%3Cpath%20d%3D%22M0%20901L41%20901L82%20901L123%20901L164%20901L205%20901L245%20901L286%20901L327%20901L368%20901L409%20901L450%20901L450%20710L409%20665L368%20737L327%20710L286%20737L245%20728L205%20620L164%20575L123%20665L82%20611L41%20647L0%20719Z%22%20fill%3D%22%23111122%22%3E%3C/path%3E%3C/svg%3E");
 
-      padding: 15px;
-      margin: 10px;
-      
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .caja_anuncios_peque .text {
+    font-size: 0.6em;
+    font-weight: 600;
+    letter-spacing: 0px;
   }
 }
 
-
 .caja_anuncios_peque .button {
   display: flex;
+  border-radius: 20px;
   align-items: center;
   justify-content: center;
   padding: 16px 32px;
-  background: linear-gradient(to bottom, #2a4aff, #131B54); /* Degradado de azul a rojo de arriba hacia abajo */
+  background: linear-gradient(
+    to bottom,
+    #064bab,
+    #1b1c1e
+  ); /* Degradado de azul a rojo de arriba hacia abajo */
 
-  border: 8px solid #c0dfff;
+  border: 8px solid #9ac5ec;
   color: white;
   gap: 8px;
 
   cursor: pointer;
   transition: all 0.3s;
-  
 }
 
 .caja_anuncios_peque .text {
-  font-size: 0.9em;
-  font-weight: 700;
+  font-size: 0.8em;
+  font-weight: 600;
   letter-spacing: 0px;
 }
 
@@ -1337,5 +1229,31 @@ border-radius: 2%;
   }
   100% {
     transform: scale3d(1, 1, 1);
+  }
+}
+
+.text-section p {
+  line-height: 1.6;
+}
+
+.texto-info {
+  margin-bottom: 25px;
+}
+
+/* Mejor visualización en celulares */
+@media (max-width: 768px) {
+  .text-section {
+    text-align: center;
+  }
+
+  .text-section h3 {
+    padding-top: 10px;
+    font-size: 1.6rem;
+  }
+
+  .text-section p {
+    font-size: 0.95rem;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

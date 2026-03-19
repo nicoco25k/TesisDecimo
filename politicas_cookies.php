@@ -71,7 +71,7 @@ PDCookieConsent.config({
                             <a class="nav-link  fontanimal" href="index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fontanimal" href="adoptar__apadrinar.php">Adopta - Apadrina</a>
+                            <a class="nav-link fontanimal" href="adoptar__apadrinar.php">Adopta</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fontanimal" href="noticias.php">Noticias</a>
@@ -88,9 +88,7 @@ PDCookieConsent.config({
                     <div class="align-items-center">
                         <a class="btn ov-btn-grow-box1 text-muted fontanimal" href="iniciar_sesion.php">Ingresar</a>
                     </div>
-                    <div>
-                        <a class="btn ov-btn-grow-box2 text-white fontanimal card25" href="registrar_usuario.php">Registrarse</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -206,7 +204,7 @@ PDCookieConsent.config({
         <!-- Columna de navegación -->
         <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
             <a class="nav-link fontanimal" href="index.php">Inicio</a>
-            <a class="nav-link fontanimal" href="adoptar__apadrinar.php">Adopta - Apadrina</a>
+            <a class="nav-link fontanimal" href="adoptar__apadrinar.php">Adopta</a>
             <a class="nav-link fontanimal" href="noticias.php">Noticias</a>
             <a class="nav-link fontanimal" href="contactanos.php">Contáctanos</a>
         </div>

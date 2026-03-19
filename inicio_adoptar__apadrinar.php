@@ -57,7 +57,7 @@ if(!isset($usuario)){
                             <a class="nav-link fontanimal" href="inicio_index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-active fontanimal" href="inicio_adoptar__apadrinar.php">Adopta - Apadrina</a>
+                            <a class="nav-link text-active fontanimal" href="inicio_adoptar__apadrinar.php">Adopta</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fontanimal" href="inicio_noticias.php">Noticias</a>
@@ -566,7 +566,7 @@ WHERE
         <!-- Columna de navegación -->
         <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
             <a class="nav-link fontanimal" href="inicio_index.php">Inicio</a>
-            <a class="nav-link fontanimal" href="inicio_adoptar__apadrinar.php">Adopta - Apadrina</a>
+            <a class="nav-link fontanimal" href="inicio_adoptar__apadrinar.php">Adopta</a>
             <a class="nav-link fontanimal" href="inicio_noticias.php">Noticias</a>
             <a class="nav-link fontanimal" href="inicio_contactanos.php">Contáctanos</a>
         </div>

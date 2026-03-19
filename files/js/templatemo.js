@@ -51,26 +51,44 @@ $(document).ready(function() {
 
  */
 
-    // Obtener todas las imágenes
-    const images = document.querySelectorAll('.image-container img');
+// Obtener todas las imágenes
+const images = document.querySelectorAll(".image-container img");
 
-    // Agregar evento de clic a cada imagen
-    images.forEach(image => {
-        image.addEventListener('click', () => {
-            // Obtener la URL de la imagen
-            const imageUrl = image.getAttribute('src');
-            // Obtener el título de la imagen
-            const imageTitle = image.getAttribute('title');
-            // Establecer el título y la URL de la imagen en el modal
-            document.getElementById('imageModalLabel').textContent = imageTitle;
-            document.getElementById('modalImage').setAttribute('src', imageUrl);
-            // Mostrar el modal
-            $('#imageModal').modal('show');
-        });
+// Agregar evento de clic a cada imagen
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    // Obtener la URL de la imagen
+    const imageUrl = image.getAttribute("src");
+    // Obtener el título de la imagen
+    const imageTitle = image.getAttribute("title");
+    // Establecer el título y la URL de la imagen en el modal
+    document.getElementById("imageModalLabel").textContent = imageTitle;
+    document.getElementById("modalImage").setAttribute("src", imageUrl);
+    // Mostrar el modal
+    $("#imageModal").modal("show");
+  });
+});
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("pf-fast")) {
+    e.target.closest(".pf-card").classList.add("flip");
+  }
+
+  if (e.target.classList.contains("pf-btn-back")) {
+    e.target.closest(".pf-card").classList.remove("flip");
+  }
+});
+
+function compartirMascota() {
+  const url = window.location.href;
+
+  if (navigator.share) {
+    navigator.share({
+      title: "Mira esta mascota en adopción",
+      text: "¡Mira esta hermosa mascota disponible para adopción!",
+      url: url,
     });
-
-
-
-    
-
-    
+  } else {
+    window.open(`https://wa.me/?text=${encodeURIComponent(url)}`, "_blank");
+  }
+}
