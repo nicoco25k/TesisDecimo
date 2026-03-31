@@ -129,8 +129,10 @@
 #logo_asopetssoft_admin_blanco {
   display: block;
   margin: auto;
-  height: 75%;
-  width: 25%;
+  max-height: 350px;
+  max-width: 350px;
+  width: 100%;
+  height: 100%;
 }
 
 #logito {
@@ -284,17 +286,125 @@
   height: 330px;
 }
 
-.container_1 {
-  border: none;
+/* GRID */
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-@media (min-width: 541px) {
+/* Campos que ocupan todo el ancho */
+.formulario__grupo-full {
+  grid-column: span 2;
+}
+
+/* Contenedor */
+.container_1 {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid #000000;
+}
+
+/* GRID */
+.formulario_mascota {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Grupo */
+.formulario_mascota__grupo {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.formulario_mascota input,
+.formulario_mascota select,
+.formulario_mascota textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Labels */
+.formulario_mascota label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Campos que ocupan todo el ancho */
+.formulario_mascota__full {
+  grid-column: span 2;
+}
+
+/* Botón */
+.formulario_mascota__btn {
+  text-align: center;
+}
+
+.formulario_mascota__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.formulario_mascota__btn button {
+  width: auto; /* evita que ocupe todo */
+  padding: 10px 30px; /* tamaño cómodo */
+}
+
+/* RESPONSIVE 🔥 */
+@media (max-width: 768px) {
+  .formulario_mascota {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario_mascota__full {
+    grid-column: span 1;
+  }
+
   .container_1 {
-    border: 5px solid #ada5a5;
-    border-radius: 25px;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 }
 
+/* Arreglar selects */
+.formulario_mascota select {
+  height: 42px;
+  line-height: 42px;
+  padding: 0 10px;
+}
+
+/* Hover */
+.formulario_mascota select:hover {
+  border-color: #28a745;
+}
+
+/* Focus */
+.formulario_mascota select:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+}
+
+.formulario_mascota select {
+  transition: all 0.3s ease;
+}
+
+.formulario__grupo-btn-enviar {
+  grid-column: span 2;
+  text-align: center;
+}
 /* Estilos para el botón */
 .my-button {
   background: none; /* Sin fondo */
@@ -1256,4 +1366,187 @@ footer {
     margin-left: 20px;
     margin-right: 20px;
   }
+}
+
+/* ===== TABLA ADMIN MASCOTAS ===== */
+.tabla-admin-container {
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 10px 10px 8px #888888;
+  border: 2px solid black;
+}
+
+/* Limitar ancho columna características */
+.tabla-admin-container td:nth-child(5) {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ===== MODAL DETALLES MASCOTA ===== */
+#modalDetallesMascota {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* era 1050 */
+}
+
+#modalDetallesMascota .modal-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#modalDetallesMascota .modal-contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 450px;
+  max-width: 95%;
+}
+
+#modalDetallesMascota .modal-encabezado {
+  background-color: #17a2b8;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#modalDetallesMascota .modal-encabezado h5 {
+  color: white;
+  margin: 0;
+}
+
+#modalDetallesMascota .modal-encabezado span {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+#modalDetallesMascota .modal-foto-container {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+#modalDetallesMascota .modal-foto-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#modalDetallesMascota .modal-nombre {
+  text-align: center;
+  padding: 12px 0;
+  background-color: #f8f9fa;
+}
+
+#modalDetallesMascota .modal-nombre h4 {
+  color: #333;
+  margin: 0;
+  font-weight: bold;
+}
+
+#modalDetallesMascota .modal-datos {
+  padding: 0 20px 15px;
+}
+
+#modalDetallesMascota .modal-pie {
+  padding: 10px 20px;
+  text-align: right;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  #modalDetallesMascota .modal-contenido {
+    width: 95%;
+  }
+
+  #modalDetallesMascota .modal-foto-container {
+    height: 200px;
+  }
+}
+
+/* ===== RESPONSIVE TABLA ADMIN ===== */
+@media (max-width: 768px) {
+  .tabla-admin-container {
+    padding: 8px;
+    overflow-x: auto;
+  }
+
+  .tabla-admin-container table {
+    min-width: 500px;
+  }
+
+  /* Reducir tamaño de botones en móvil */
+  .tabla-admin-container .btn {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  #modalDetallesMascota .modal-contenido {
+    left: 50%;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  #modalDetallesMascota .modal-foto-container {
+    height: 200px;
+  }
+}
+
+/* ===== MODAL SOLICITUDES ===== */
+#modalSolicitud {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000; /* 🔥 suficiente para ganarle al sidebar (100) */
+}
+
+/* Fondo oscuro */
+#modalSolicitud .modal-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Contenido del modal */
+#modalSolicitud .modal-contenido {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 580px;
+  max-width: 95vw;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 2;
 }

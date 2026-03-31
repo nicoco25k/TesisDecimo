@@ -29,4 +29,3 @@ if ($stmt->execute()) {
     // Ocurrió un error al actualizar el estado de la mascota
     echo 'error';
 }
-?>

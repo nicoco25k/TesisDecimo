@@ -146,6 +146,29 @@ $pagina_actual = basename($_SERVER['PHP_SELF']);
 <?php endif; ?>
 
 
+<?php if ($pagina_actual == "editar_correo.php"): ?>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="files/js/editar_correo.js"></script>
+
+<?php endif; ?>
+
+
+<?php if ($pagina_actual == "editar_telefono.php"): ?>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="files/js/editar_telefono.js"></script>
+
+<?php endif; ?>
+
+
+
+<?php if ($pagina_actual == "editar_clave.php"): ?>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="files/js/editar_claves.js"></script>
+
+<?php endif; ?>
 
 
 <!-- SIEMPRE -->

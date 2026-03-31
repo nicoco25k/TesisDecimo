@@ -36,7 +36,7 @@
     <div class="container" style="margin-top: 10px;padding: 5px">
         <table id="tablax" class="table table-striped table-bordered">
             <thead>
-                
+
                 <td>Nombre</td>
                 <td>NickName</td>
                 <td>Tipo de documento</td>

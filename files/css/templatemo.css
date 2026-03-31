@@ -874,13 +874,15 @@ select:focus {
 }
 .home-section {
   position: relative;
-  background: #e4e9f7;
-  height: 100vh;
+  background: #e5e5e5;
+  min-height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
-  padding: 12px;
+  padding: 20px;
+  z-index: 1;
 }
+
 .sidebar.close ~ .home-section {
   left: 78px;
   width: calc(100% - 78px);

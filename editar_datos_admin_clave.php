@@ -1,26 +1,24 @@
-
 <?php
 session_start();
 
-$usuario = $_SESSION['usuraio'];
+$usuario = $_SESSION['usuario'];
 
 include_once("bd/Conexion.php");
 
 
 
-$sql ="SELECT id_rol 
+$sql = "SELECT id_rol 
 FROM tabla_usuarios WHERE nickname_usuario='$usuario'";
 
-foreach ($dbh ->query($sql) as $row) 
-{
-    $n1n = $row['id_rol'];
+foreach ($dbh->query($sql) as $row) {
+  $n1n = $row['id_rol'];
 }
 
-if($n1n!=2){
+if ($n1n != 2) {
   header('location: iniciar_sesion.php');
 }
 
-if(!isset($usuario)){
+if (!isset($usuario)) {
   header('location: iniciar_sesion.php');
 }
 
@@ -31,19 +29,20 @@ if(!isset($usuario)){
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<title>ASOPATICAS</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASOPATICAS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="files/img/logo_asopaticas.png">
+  <link rel="icon" href="files/img/logo_asopaticas.png">
 
-    <link rel="stylesheet" href="files/css/bootstrap.min.css">
-    <link rel="stylesheet" href="files/css/templatemo.css">
-    <link rel="stylesheet" href="files/css/custom.css">
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-    <script src="https://kit.fontawesome.com/3a5bbe002b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="files/css/bootstrap.min.css">
+  <link rel="stylesheet" href="files/css/templatemo.css">
+  <link rel="stylesheet" href="files/css/custom.css">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <script src="https://kit.fontawesome.com/3a5bbe002b.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -54,200 +53,200 @@ if(!isset($usuario)){
 
 
 
-    
- <!--INICIO MENU-->
- <div class="sidebar close">
-  <div class="logo-details">
-    <i><a href="asopetssoft.php" target="_blank"><img id="logo_asopetssoft_admin_x" class="img" src="files/img/LOGO_BLANCO_X.png" alt="logo asopetssoft" ></a></i></a>
-    
-    <span class="logo_name">ASOPETSSOFT</span>
-  </div>
-  <ul class="nav-links">
-    <li>
-      <a href="inicio_admin.php">
-        <i class='bx bx-grid-alt' ></i>
-        <span class="link_name">Inicio</span>
-      </a>
-      <ul class="sub-menu blank">
-        <li><a class="link_name" href="#">Inicio</a></li>
-      </ul>
-    </li>
 
-    <li>
-      <div class="iocn-link">
-        <a href="#">
-          <i class="fa-solid fa-dog"></i>
-          <span class="link_name">Mascotas</span>
-        </a>
-        <i class='bx bxs-chevron-down arrow' ></i>
-      </div>
-      <ul class="sub-menu">
-        <li><a class="link_name" href="#">Mascotas</a></li>
-        <li><a href="registrar_mascota.php">Añadir nueva mascota</a></li>   
-        <li><a href="mascotas.php">Consultar mascotas</a></li>         
-     
-        
-      </ul>
-    </li>
+  <!--INICIO MENU-->
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i><a href="asopetssoft.php" target="_blank"><img id="logo_asopetssoft_admin_x" class="img" src="files/img/LOGO_BLANCO_X.png" alt="logo asopetssoft"></a></i></a>
 
-    <li>
-      <div class="iocn-link">
-        <a href="#">
-          <i class="fa-regular fa-clipboard"></i>
-          <span class="link_name">Adopciones</span>
+      <span class="logo_name">ASOPETSSOFT</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="inicio_admin.php">
+          <i class='bx bx-grid-alt'></i>
+          <span class="link_name">Inicio</span>
         </a>
-        <i class='bx bxs-chevron-down arrow' ></i>
-      </div>
-      <ul class="sub-menu">
-        <li><a class="link_name" href="#">Adopciones</a></li>
-        <li><a href="solicitudes_adopcion.php">Solicitudes de adopción</a></li>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Inicio</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="fa-solid fa-dog"></i>
+            <span class="link_name">Mascotas</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Mascotas</a></li>
+          <li><a href="registrar_mascota.php">Añadir nueva mascota</a></li>
+          <li><a href="mascotas.php">Consultar mascotas</a></li>
+
+
+        </ul>
+      </li>
+
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="fa-regular fa-clipboard"></i>
+            <span class="link_name">Adopciones</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Adopciones</a></li>
+          <li><a href="solicitudes_adopcion.php">Solicitudes de adopción</a></li>
           <li><a href="adopciones_aprobadas.php">Adopciones Aprobadas</a></li>
           <li><a href="adopciones_declinadas.php">Adopciones Reprobadas</a></li>
-      </ul>
-    </li>
+        </ul>
+      </li>
 
-    <li>
-      <div class="iocn-link">
-        <a href="#">
-          <i class="fa-solid fa-users"></i>
-          <span class="link_name">Usuarios</span>
-        </a>
-        <i class='bx bxs-chevron-down arrow' ></i>
-      </div>
-      <ul class="sub-menu">
-        <li><a class="link_name" href="#">Usuarios</a></li>
-        <li><a href="usuarios_registrados.php">Consultar usuarios</a></li>
-        <li><a href="mensajes.php">Consultar mensajes</a></li>
-        
-      
-      </ul>
-    </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="fa-solid fa-users"></i>
+            <span class="link_name">Usuarios</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Usuarios</a></li>
+          <li><a href="usuarios_registrados.php">Consultar usuarios</a></li>
+          <li><a href="mensajes.php">Consultar mensajes</a></li>
 
-    <li>
-                <div class="iocn-link">
-                  <a href="#">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <span class="link_name">Editor</span>
-                  </a>
-                  <i class='bx bxs-chevron-down arrow' ></i>
-                </div>
-                <ul class="sub-menu">
-                  <li><a class="link_name" href="#">Editor</a></li>
-                  <li><a href="noticias_add.php">Añadir noticias</a></li>
-                 
-                </ul>
-              </li>
 
-              <li>
-                <div class="iocn-link">
-                  <a href="#">
-                    <i class='bx bx-cog' ></i>
-                    <span class="link_name">Configurar</span>
-                  </a>
-                  <i class='bx bxs-chevron-down arrow' ></i>
-                </div>
-                <ul class="sub-menu">
-                  <li><a class="link_name" href="#">Configurar</a></li>
-                  <li><a href="editar_datos_admin.php">Editar datos de cuenta</a></li>
-                  <li><a href="logout.php">Cerrar sesión</a></li>
-                 
-                </ul>
-              </li>
+        </ul>
+      </li>
 
-    
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span class="link_name">Editor</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Editor</a></li>
+          <li><a href="noticias_add.php">Añadir noticias</a></li>
+
+        </ul>
+      </li>
+
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-cog'></i>
+            <span class="link_name">Configurar</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Configurar</a></li>
+          <li><a href="editar_datos_admin.php">Editar datos de cuenta</a></li>
+          <li><a href="logout.php">Cerrar sesión</a></li>
+
+        </ul>
+      </li>
 
 
 
-    <li>
-        
+
+
+      <li>
+
         <div class="profile-details">
-            
+
           <div class="profile-content">
             <img id="admin_img" class="img" src="files/img/admin1.png" alt="imagen admin">
           </div>
-          
+
           <div class="name-job">
-          <div class="profile_name"><?php echo $usuario; ?></div>
+            <div class="profile_name"><?php echo $usuario; ?></div>
             <div class="job">Administrador</div>
           </div>
-          <a href="logout.php"><i class='bx bx-log-out' ></i></a>
+          <a href="logout.php"><i class='bx bx-log-out'></i></a>
         </div>
       </li>
-    
-    
-    
+
+
+
     </ul>
-      </div>
-
-
-    <!--FIN MENU-->
-
-          <section class="home-section" style="background-color: #E5E5E5;">
-
-   <!-- Header -->
-   
-
-
-   <div class="home-content">
-    <i class='bx bx-menu' style="padding-left: 10px;"></i>
-
-
   </div>
 
-<!-- Close <header></header>-->
-            
-   <!-- Start Banner Hero -->
-  
 
+  <!--FIN MENU-->
 
-	
-		
+  <section class="home-section" style="background-color: #E5E5E5;">
 
-   <p class="py-5"></p>
-	<main>
+    <!-- Header -->
 
 
 
-    <h3 class="text-center py-3"><b>Digita tu nuevo contraseña</b></h3>
-    <label for="emails" class="formulario__label text-center py-3">Recuerda que la nueva contraseña puede contener letras o numeros y esta debe contar entre 8 a 20 caracteres</label>
-
-	<form method="POST" action="" class="formulario" id="formulario">
+    <div class="home-content">
+      <i class='bx bx-menu' style="padding-left: 10px;"></i>
 
 
-<!-- Grupo: Contraseña -->
-<div class="formulario__grupo" id="grupo__password">
-		<label for="password" class="formulario__label">Nueva Contraseña</label>
-		<div class="formulario__grupo-input">
-			<input type="password" class="formulario__input" name="password" id="password" placeholder="********" minlength="8" maxlength="20" required>
-			<i class="formulario__validacion-estado fas fa-times-circle"></i>
-		</div>
-		<p class="formulario__input-error">La contraseña tiene que ser de 8 a 12 caracteres.</p>
-	</div>
+    </div>
 
-	<!-- Grupo: Confirmar contraseña -->
-	<div class="formulario__grupo" id="grupo__password2">
-		<label for="password2" class="formulario__label">Repetir Nueva Contraseña</label>
-		<div class="formulario__grupo-input">
-			<input type="password" class="formulario__input" name="password2" id="password2" placeholder="********" minlength="8" maxlength="20" required>
-			<i class="formulario__validacion-estado fas fa-times-circle"></i>
-		</div>
-		<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
-	</div>
+    <!-- Close <header></header>-->
+
+    <!-- Start Banner Hero -->
 
 
 
 
-	
-</div>
-
-<div class="formulario__grupo formulario__grupo-btn-enviar py-3">
-    <button type="submit" class="btn btn-success my-2 my-sm-0"  >Cambiar contraseña</button>
-</div>
-	</form>
 
 
-</main>
-<a class="btn btn-success my-2 my-sm-0 " href="editar_datos_admin.php" style="margin-left: 10px;">Regresar</a>
+    <p class="py-5"></p>
+    <main>
+
+
+
+      <h3 class="text-center py-3"><b>Digita tu nuevo contraseña</b></h3>
+      <label for="emails" class="formulario__label text-center py-3">Recuerda que la nueva contraseña puede contener letras o numeros y esta debe contar entre 8 a 20 caracteres</label>
+
+      <form method="POST" action="" class="formulario" id="formulario">
+
+
+        <!-- Grupo: Contraseña -->
+        <div class="formulario__grupo" id="grupo__password">
+          <label for="password" class="formulario__label">Nueva Contraseña</label>
+          <div class="formulario__grupo-input">
+            <input type="password" class="formulario__input" name="password" id="password" placeholder="********" minlength="8" maxlength="20" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">La contraseña tiene que ser de 8 a 12 caracteres.</p>
+        </div>
+
+        <!-- Grupo: Confirmar contraseña -->
+        <div class="formulario__grupo" id="grupo__password2">
+          <label for="password2" class="formulario__label">Repetir Nueva Contraseña</label>
+          <div class="formulario__grupo-input">
+            <input type="password" class="formulario__input" name="password2" id="password2" placeholder="********" minlength="8" maxlength="20" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+        </div>
+
+
+
+
+
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar py-3">
+          <button type="submit" class="btn btn-success my-2 my-sm-0">Cambiar contraseña</button>
+        </div>
+      </form>
+
+
+    </main>
+    <a class="btn btn-success my-2 my-sm-0 " href="editar_datos_admin.php" style="margin-left: 10px;">Regresar</a>
 
 
 
@@ -266,10 +265,9 @@ if(!isset($usuario)){
     <script src="files/js/templatemo.js"></script>
     <script src="files/js/custom_menu.js"></script>
 
-  <script src="files/js/editar_claves_admin.js"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="files/js/editar_claves_admin.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- End Script -->
 </body>
+
 </html>
-
-

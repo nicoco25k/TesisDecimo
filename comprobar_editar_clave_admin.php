@@ -2,7 +2,7 @@
 session_start();
 
 include_once("bd/Conexion.php");
-$usuario = $_SESSION['usuraio'];
+$usuario = $_SESSION['usuario'];
 $password = $_POST["password"];
 $password2 = $_POST["password2"];
 
@@ -12,46 +12,45 @@ $expresionPassword = '/^[a-zA-Z0-9]{8,20}$/';
 
 if (!preg_match($expresionPassword, $password)) {
     echo "995"; // no cumple requisitos
-}
-
-elseif ($password != $password2){
+} elseif ($password != $password2) {
     echo "998"; //contras diferentes
-}else{
+} else {
 
 
 
-$c3=0;
-//consultar si este dato existe
-$sql = "SELECT clave_usuario FROM tabla_usuarios WHERE nickname_usuario='$usuario'";
+    $c3 = 0;
+    //consultar si este dato existe
+    $sql = "SELECT clave_usuario FROM tabla_usuarios WHERE nickname_usuario='$usuario'";
 
 
-foreach ($dbh ->query($sql) as $row) 
-{
+    foreach ($dbh->query($sql) as $row) {
 
-    $clave_usuario = $row['clave_usuario'];
+        $clave_usuario = $row['clave_usuario'];
 
-    if($clave_usuario==$password){                 $c3 = 1;       }
-
-}
-
-
-if($c3==1){        echo "3"; /*pass_repetida*/      }
+        if ($clave_usuario == $password) {
+            $c3 = 1;
+        }
+    }
 
 
-
-
-$c_max=0;
-if($c3==0)
-{
-    $c_max=1;
-}
-
-
-if($c_max==1){
+    if ($c3 == 1) {
+        echo "3"; /*pass_repetida*/
+    }
 
 
 
-$sql = "
+
+    $c_max = 0;
+    if ($c3 == 0) {
+        $c_max = 1;
+    }
+
+
+    if ($c_max == 1) {
+
+
+
+        $sql = "
 
 UPDATE tabla_usuarios SET clave_usuario='$password' WHERE nickname_usuario='$usuario'
 
@@ -59,16 +58,10 @@ UPDATE tabla_usuarios SET clave_usuario='$password' WHERE nickname_usuario='$usu
 
 
 
-if (!$dbh->query($sql)) {
-    echo "0923";
+        if (!$dbh->query($sql)) {
+            echo "0923";
+        } else {
+            echo "2309";
+        }
+    }
 }
-else{
-    echo "2309";
-}
-
-}
-
-}
-
-
-?>
