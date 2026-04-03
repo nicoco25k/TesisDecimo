@@ -39,7 +39,15 @@ $(document).ready(function () {
 });
 
 function generarReporte() {
-  window.location.href = "generar_reporte.php";
+  window.location.href = "generar_reporte_solicitudes.php";
+}
+
+function generarReporte_aprobadas() {
+  window.location.href = "generar_reporte_aprobados.php";
+}
+
+function generarReporte_declinadas() {
+  window.location.href = "generar_reporte_declinadas.php";
 }
 
 function verSolicitud(id) {

@@ -45,7 +45,8 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Adopciones</a></li>
-                    <li><a href="solicitudes_adopcion.php">Solicitudes de adopción</a></li>
+                    <li><a href="estadisticas.php">Estadisticas</a></li>
+                    <li><a href="solicitudes_adopcion.php">Solicitudes de Adopción</a></li>
                     <li><a href="adopciones_aprobadas.php">Adopciones Aprobadas</a></li>
                     <li><a href="adopciones_declinadas.php">Adopciones Reprobadas</a></li>
                 </ul>

@@ -6,9 +6,11 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Crear nuevo PDF
-class MYPDF extends TCPDF {
+class MYPDF extends TCPDF
+{
     // Agregar cabecera personalizada
-    public function Header() {
+    public function Header()
+    {
         $this->SetY(20); // Ajusta la posición vertical del título
         $this->SetFont('helvetica', 'B', 14);
         $this->Cell(0, 15, 'Reporte de Usuarios Registrados', 0, false, 'C', 0, '', 0, false, 'M', 'M');
@@ -16,7 +18,8 @@ class MYPDF extends TCPDF {
     }
 
     // Agregar pie de página personalizado
-    public function Footer() {
+    public function Footer()
+    {
         $this->SetY(-25);  // Ajusta la posición vertical del pie de página
         $this->SetFont('helvetica', 'I', 8);
         $this->Cell(0, 10, 'Página ' . $this->getAliasNumPage() . '/' . $this->getAliasNbPages(), 0, false, 'C', 0, '', 0, false, 'T', 'M');
@@ -81,4 +84,3 @@ foreach ($usuarios as $row) {
 
 // Descargar el PDF
 $pdf->Output('reporte_usuarios.pdf', 'D');
-?>

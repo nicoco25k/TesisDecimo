@@ -9,35 +9,45 @@ include_once("bd/Conexion.php");
 
 
 // Actualizar el estado del usuario en la base de datos
-$sql = "UPDATE bot_solicitud_adopcion SET id_estado_adopcion = :nuevoEstado WHERE id_solicitud_adopcion = :id_solicitud_adopcion";
+$sql = "UPDATE bot_solicitud_adopcion 
+        SET id_estado_adopcion = :nuevoEstado,
+            fecha_resolucion = CASE 
+                WHEN :nuevoEstado2 IN (2, 3) THEN CURDATE() 
+                ELSE NULL 
+            END
+        WHERE id_solicitud_adopcion = :id_solicitud_adopcion";
+
 
 $stmt = $dbh->prepare($sql);
 $stmt->bindParam(':nuevoEstado', $nuevoEstado);
+$stmt->bindParam(':nuevoEstado2', $nuevoEstado);
 $stmt->bindParam(':id_solicitud_adopcion', $id_solicitud_adopcion);
 
 
 
 
-$sql ="SELECT * FROM bot_solicitud_adopcion WHERE id_solicitud_adopcion='$id_solicitud_adopcion'";
 
-foreach ($dbh ->query($sql) as $row) 
-{
+
+
+$sql = "SELECT * FROM bot_solicitud_adopcion WHERE id_solicitud_adopcion='$id_solicitud_adopcion'";
+
+foreach ($dbh->query($sql) as $row) {
     $usuario_nombre = $row['usuario_nombre'];
     $usuario_correo = $row['usuario_correo'];
     $nombre_mascota = $row['nombre_mascota'];
 }
 
 
-if($nuevoEstado==3){
+if ($nuevoEstado == 3) {
 
 
     $destinatarios = [
         'pa320411@gmail.com',
         $usuario_correo
     ];
-    
+
     $asunto = "Confirmación de Solicitud de Adopción - ASOPATICAS";
-    
+
     // Estructura HTML del correo
     $cuerpo = "
     <!DOCTYPE html>
@@ -108,32 +118,29 @@ if($nuevoEstado==3){
     </body>
     </html>
     ";
-    
+
     // Encabezados para enviar correo en formato HTML
     $headers  = "From: ASOPATICAS <no-reply@asopaticas.com>\r\n";
     $headers .= "Reply-To: amigosdeasopaticas@gmail.com\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-    
+
     // Envía el correo a cada destinatario
     foreach ($destinatarios as $destinatario) {
         mail($destinatario, $asunto, $cuerpo, $headers);
     }
-    
-
-    
 }
 
-if($nuevoEstado==2){
+if ($nuevoEstado == 2) {
 
     $destinatarios = [
         'pa320411@gmail.com',
 
         $usuario_correo
     ];
-    
+
     $asunto = "Resultado de Solicitud de Adopción - ASOPATICAS";
-    
+
     // Cuerpo del correo en formato HTML
     $cuerpo = "
     <!DOCTYPE html>
@@ -206,18 +213,17 @@ if($nuevoEstado==2){
     </body>
     </html>
     ";
-    
+
     // Encabezados para correo HTML
     $headers  = "From: ASOPATICAS <no-reply@asopaticas.com>\r\n";
     $headers .= "Reply-To: amigosdeasopaticas@gmail.com\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-    
+
     // Envía el correo a cada destinatario
     foreach ($destinatarios as $destinatario) {
         mail($destinatario, $asunto, $cuerpo, $headers);
     }
-    
 }
 
 
@@ -229,4 +235,3 @@ if ($stmt->execute()) {
     // Ocurrió un error al actualizar el estado del usuario
     echo 'Error';
 }
-?>
