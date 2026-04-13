@@ -69,8 +69,8 @@ inputs.forEach((input) => {
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
   const postData = {
-    usuario: $("#usuario").val(),
-    password: $("#password").val(),
+    usuario: $("#usuario").val().toLowerCase().trim(),
+    password: $("#password").val(), // ← esta NO se toca
   };
   $.post("comprobar_inicio_sesion.php", postData, function (response) {
     if (response === "user") {

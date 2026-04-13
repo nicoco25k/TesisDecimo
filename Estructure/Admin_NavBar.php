@@ -28,8 +28,8 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Mascotas</a></li>
-                    <li><a href="registrar_mascota.php">Añadir nueva mascota</a></li>
-                    <li><a href="mascotas.php">Consultar mascotas</a></li>
+                    <li><a href="registrar_mascota.php">Añadir Nueva Mascota</a></li>
+                    <li><a href="mascotas.php">Consultar Mascotas</a></li>
 
 
                 </ul>
@@ -45,8 +45,8 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Adopciones</a></li>
-                    <li><a href="estadisticas.php">Estadisticas</a></li>
-                    <li><a href="solicitudes_adopcion.php">Solicitudes de Adopción</a></li>
+                    <li><a href="estadisticas.php">Estadisticas De Adopciones</a></li>
+                    <li><a href="solicitudes_adopcion.php">Solicitudes De Adopción</a></li>
                     <li><a href="adopciones_aprobadas.php">Adopciones Aprobadas</a></li>
                     <li><a href="adopciones_declinadas.php">Adopciones Reprobadas</a></li>
                 </ul>
@@ -62,8 +62,9 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Usuarios</a></li>
-                    <li><a href="usuarios_registrados.php">Consultar usuarios</a></li>
-                    <li><a href="mensajes.php">Consultar mensajes</a></li>
+                    <li><a href="estadisticas_usuarios_mensajes.php">Estadisticas</a></li>
+                    <li><a href="usuarios_registrados.php">Consultar Usuarios</a></li>
+                    <li><a href="mensajes.php">Consultar Mensajes</a></li>
 
 
 
@@ -80,7 +81,8 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Editor</a></li>
-                    <li><a href="noticias_add.php">Añadir noticias</a></li>
+                    <li><a href="noticias_add.php">Añadir Noticias</a></li>
+                    <li><a href="editar_noticias.php">Editar Noticias</a></li>
 
                 </ul>
             </li>

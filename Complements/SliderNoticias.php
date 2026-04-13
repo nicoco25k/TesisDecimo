@@ -1,17 +1,18 @@
   <?php
-                include_once("bd/Conexion.php");
+    include_once("bd/Conexion.php");
 
-                $sql = "
-                SELECT id_noticias, img_noticia 
-                FROM tabla_noticias 
-                ORDER BY id_noticias DESC 
-                LIMIT 4
+    $sql = "
+         SELECT id_noticias, img_noticia 
+FROM tabla_noticias 
+WHERE id_estado_noticia = 1
+ORDER BY id_noticias DESC 
+LIMIT 6
                 ";
 
-                foreach ($dbh->query($sql) as $row) {
-                    $img_noticia = $row['img_noticia'];
+    foreach ($dbh->query($sql) as $row) {
+        $img_noticia = $row['img_noticia'];
 
-                    echo '
+        echo '
                     <div class="card swiper-slide">
                         <div class="image-content">
                             <span class="overlay"></span>
@@ -21,5 +22,5 @@
                         </div>
                     </div>
                     ';
-                }
-                ?>
+    }
+    ?>

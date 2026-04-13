@@ -3,8 +3,8 @@
 
 
 
-    <div class="container-contacto py-2">
-            <h3 class="text-success text-center pt-5 pb-2 fontanimal">Últimas Noticias</h3>
+<div class="container-contacto py-2">
+    <h3 class="text-success text-center pt-5 pb-2 fontanimal">Últimas Noticias</h3>
 
     <div class="slide-container swiper">
         <div class="slide-content">
@@ -13,10 +13,11 @@
                 include_once("bd/Conexion.php");
 
                 $sql = "
-                SELECT id_noticias, img_noticia 
-                FROM tabla_noticias 
-                ORDER BY id_noticias DESC 
-                LIMIT 4
+         SELECT id_noticias, img_noticia 
+FROM tabla_noticias 
+WHERE id_estado_noticia = 1
+ORDER BY id_noticias DESC 
+LIMIT 6
                 ";
 
                 foreach ($dbh->query($sql) as $row) {

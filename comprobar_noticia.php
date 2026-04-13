@@ -1,22 +1,26 @@
 <?php
 include_once("bd/Conexion.php");
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-$rutaCompleta = $_POST['rutaCompleta'];
+    $rutaCompleta = $_POST['rutaCompleta'] ?? '';
 
+    if (empty($rutaCompleta)) {
+        echo "0923";
+        exit;
+    }
 
-
-
-
-// Realiza las operaciones necesarias con las variables recibidas
-
-$sql = "INSERT INTO tabla_noticias(id_noticias, img_noticia, fecha_subida) 
-VALUES (NULL, '$rutaCompleta',now())"; 
-
-
-if (!$dbh->query($sql)) {
-    echo "0923";
+    try {
+        $stmt = $dbh->prepare("
+      INSERT INTO tabla_noticias (id_noticias, id_estado_noticia, img_noticia, fecha_subida) 
+      VALUES (NULL, 1, :ruta, NOW())
+    ");
+        $stmt->bindParam(':ruta', $rutaCompleta, PDO::PARAM_STR);
+        $stmt->execute();
+        echo "2309";
+    } catch (PDOException $e) {
+        echo "0923";
+    }
 } else {
-    echo "2309";
+    echo "0923";
 }
-?>
